@@ -221,20 +221,20 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">UPL: Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation</h1>
+            <h1 class="title is-1 publication-title">Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="mailto:yfzhao19@fudan.edu.cn" target="_blank">Yifei Zhao</a><sup>*</sup>,</span>
+                <a href="mailto:yfzhao19@fudan.edu.cn" target="_blank">Yifei Zhao</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="mailto:fyzhao20@fudan.edu.cn" target="_blank">Fanyu Zhao</a><sup>*</sup>,</span>
+                  <a href="mailto:fyzhao20@fudan.edu.cn" target="_blank">Fanyu Zhao</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="mailto:liys@fudan.edu.cn" target="_blank">Yinsheng Li</a>
+                    <a href="mailto:liys@fudan.edu.cn" target="_blank">Yinsheng Li</a><sup>1,*</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Fudan University, Shanghai, China<br>ICASSP 2026</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Fudan University, Shanghai, China<br>ICASSP 2026 (Under Review)</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -263,7 +263,7 @@
                     <a href="https://arxiv.org/abs/2024.XXXXX" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <i class="fas fa-file-alt"></i>
                     </span>
                     <span>arXiv</span>
                   </a>
@@ -284,14 +284,14 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
+        <div class="content has-text-justified" style="line-height: 1.4; font-size: 0.95rem;">
+          <p style="margin-bottom: 0.8rem;">
             Few-shot 3D semantic segmentation aims to generate accurate semantic masks for query point clouds with only a few annotated support examples. Existing prototype-based methods typically construct compact and deterministic prototypes from the support set to guide query segmentation. However, such rigid representations are unable to capture the intrinsic uncertainty introduced by scarce supervision, which often results in degraded robustness and limited generalization.
           </p>
-          <p>
+          <p style="margin-bottom: 0.8rem;">
             In this work, we propose <strong>UPL</strong> (Uncertainty-aware Prototype Learning), a probabilistic approach designed to incorporate uncertainty modeling into prototype learning for few-shot 3D segmentation. Our framework introduces two key components. First, UPL introduces a dual-stream prototype refinement module that enriches prototype representations by jointly leveraging limited information from both support and query samples. Second, we formulate prototype learning as a variational inference problem, regarding class prototypes as latent variables. This probabilistic formulation enables explicit uncertainty modeling, providing robust and interpretable mask predictions.
           </p>
-          <p>
+          <p style="margin-bottom: 0;">
             Extensive experiments on the widely used ScanNet and S3DIS benchmarks show that our UPL achieves consistent state-of-the-art performance under different settings while providing reliable uncertainty estimation.
           </p>
         </div>
@@ -301,19 +301,33 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Method Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our UPL framework consists of two key components: (i) a Dual-stream Prototype Refinement (DPR) module that enhances prototype discriminability by leveraging mutual information between support and query sets, and (ii) a Variational Prototype Inference Regularization (VPIR) module that models class prototypes as latent variables to capture uncertainty and enable probabilistic inference.
+          </p>
+        </div>
+        <div class="has-text-centered" style="margin-top: 2rem;">
+          <img src="static/images/UPL_framework.png" alt="UPL Framework Overview" style="max-width: 100%; height: auto;" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method Section -->
 
-<!-- Image carousel -->
+<!-- Results Visualization -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">Qualitative Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <img src="static/images/UPL_framework.png" alt="UPL Framework Overview" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          UPL Framework Overview: Dual-stream Prototype Refinement (DPR) and Variational Prototype Inference Regularization (VPIR) modules.
-        </h2>
-      </div>
-      <div class="item">
         <img src="static/images/vis_horiziopn.png" alt="Qualitative Results on S3DIS" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Qualitative Results on S3DIS: UPL produces cleaner object boundaries and provides uncertainty maps.

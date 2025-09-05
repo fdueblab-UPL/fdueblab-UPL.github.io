@@ -1,80 +1,57 @@
-# Academic Project Page Template
+# UPL: Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+这是UPL论文的官方项目页面，展示我们的研究成果。
 
-A clean, responsive template for academic project pages.
+## 项目页面内容
 
+- **论文标题**: Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation
+- **作者**: Yifei Zhao, Fanyu Zhao, Yinsheng Li
+- **机构**: 复旦大学
+- **会议**: ICASSP 2026
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+## 主要特性
 
+- 完整的论文摘要
+- 实验结果表格展示
+- 框架架构图轮播
+- 不确定性分析可视化
+- 代码和论文链接
+- 完整的BibTeX引用
 
+## 文件结构
 
-## Start using the template
-To start using the template click on `Use this Template`.
+```
+├── index.html          # 主页面文件
+├── static/
+│   ├── css/           # 样式文件
+│   ├── js/            # JavaScript文件
+│   ├── images/        # 图片资源
+│   │   ├── UPL_framework.png      # 框架概览图
+│   │   ├── vis_horiziopn.png      # 可视化结果图
+│   │   ├── uncertainty_horizon.png # 不确定性分析图
+│   │   └── favicon.ico            # 网站图标
+│   └── pdfs/          # PDF文件
+└── README.md          # 说明文档
+```
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+## 使用方法
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+1. 将项目文件上传到GitHub Pages或其他静态网站托管服务
+2. 确保所有静态资源路径正确
+3. 添加论文PDF文件
+4. 更新arXiv链接（当论文发布后）
 
-## What's New
+## 注意事项
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+- 所有图片文件已放置在`static/images/`目录中
+- 论文PDF应放置在`static/pdfs/paper.pdf`
+- 更新arXiv链接时需要替换`2024.XXXXX`为实际的arXiv ID
+- 可选：添加`static/images/social_preview.png`作为社交媒体预览图（1200x630px）
 
-## Components
+## 技术栈
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
-
-## Customization
-
-The HTML file has TODO comments showing what to replace:
-
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
-
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+- HTML5
+- CSS3 (Bulma框架)
+- JavaScript
+- 响应式设计
+- SEO优化
