@@ -224,17 +224,16 @@
             <h1 class="title is-1 publication-title">Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="mailto:yfzhao19@fudan.edu.cn" target="_blank">Yifei Zhao</a><sup>1</sup>,</span>
+                <a href="mailto:yfzhao19@fudan.edu.cn" target="_blank">Yifei Zhao</a>,</span>
                 <span class="author-block">
-                  <a href="mailto:fyzhao20@fudan.edu.cn" target="_blank">Fanyu Zhao</a><sup>1</sup>,</span>
+                  <a href="mailto:fyzhao20@fudan.edu.cn" target="_blank">Fanyu Zhao</a>,</span>
                   <span class="author-block">
-                    <a href="mailto:liys@fudan.edu.cn" target="_blank">Yinsheng Li</a><sup>1,*</sup>
+                    <a href="mailto:liys@fudan.edu.cn" target="_blank">Yinsheng Li</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Fudan University, Shanghai, China<br>ICASSP 2026 (Under Review)</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                    <span class="author-block">Fudan University, Shanghai, China<br>ICASSP 2026 (Under Review)</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -326,24 +325,28 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">Qualitative Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/vis_horiziopn.png" alt="Qualitative Results on S3DIS" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative Results on S3DIS: UPL produces cleaner object boundaries and provides uncertainty maps.
-        </h2>
+      
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="has-text-centered" style="margin-bottom: 3rem;">
+            <img src="static/images/vis_horiziopn.png" alt="Qualitative Results on S3DIS" style="max-width: 70%; height: auto;" loading="lazy"/>
+            <h3 class="subtitle has-text-centered" style="margin-top: 1rem;">
+              Qualitative Results on S3DIS: UPL produces cleaner object boundaries and provides uncertainty maps.
+            </h3>
+          </div>
+          
+          <div class="has-text-centered">
+            <img src="static/images/uncertainty_horizon.png" alt="Uncertainty Analysis" style="max-width: 70%; height: auto;" loading="lazy"/>
+            <h3 class="subtitle has-text-centered" style="margin-top: 1rem;">
+              Uncertainty Analysis: High uncertainty is concentrated along object boundaries and ambiguous regions.
+            </h3>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <img src="static/images/uncertainty_horizon.png" alt="Uncertainty Analysis" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Uncertainty Analysis: High uncertainty is concentrated along object boundaries and ambiguous regions.
-        </h2>
-     </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End Results Visualization -->
 
 <!-- Results Section -->
 <section class="section hero is-light">
@@ -358,8 +361,8 @@
           </p>
           
           <h3 class="title is-4">Main Results on S3DIS and ScanNet</h3>
-          <div class="table-container">
-            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <div class="table-container" style="overflow-x: auto;">
+            <table class="table is-bordered is-striped is-narrow is-hoverable" style="font-size: 0.85rem; min-width: 800px;">
               <thead>
                 <tr>
                   <th rowspan="2">Dataset</th>
@@ -505,7 +508,7 @@
       <pre id="bibtex-code"><code>@article{zhao2024upl,
   title={Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation},
   author={Zhao, Yifei and Zhao, Fanyu and Li, Yinsheng},
-  journal={ICASSP 2026},
+  journal={Under Review},
   year={2024},
   url={https://fdueblab-UPL.github.io/}
 }</code></pre>
