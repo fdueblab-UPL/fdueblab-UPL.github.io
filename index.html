@@ -356,96 +356,96 @@
           </p>
           
           <h3 class="title is-4">Main Results on S3DIS and ScanNet</h3>
-          <div class="table-container" style="overflow-x: auto; max-width: 100%;">
-            <table class="table is-bordered is-striped is-narrow is-hoverable" style="font-size: 0.75rem; min-width: 900px; width: 100%;">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-narrow is-hoverable" style="font-size: 0.65rem; width: 100%; table-layout: fixed;">
               <thead>
                 <tr>
-                  <th rowspan="2">Dataset</th>
-                  <th rowspan="2">Method</th>
-                  <th colspan="3">1-way 1-shot</th>
-                  <th colspan="3">1-way 5-shot</th>
-                  <th colspan="3">2-way 1-shot</th>
-                  <th colspan="3">2-way 5-shot</th>
+                  <th rowspan="2" style="width: 8%;">Dataset</th>
+                  <th rowspan="2" style="width: 12%;">Method</th>
+                  <th colspan="3" style="width: 20%;">1-way 1-shot</th>
+                  <th colspan="3" style="width: 20%;">1-way 5-shot</th>
+                  <th colspan="3" style="width: 20%;">2-way 1-shot</th>
+                  <th colspan="3" style="width: 20%;">2-way 5-shot</th>
                 </tr>
                 <tr>
-                  <th>S0</th><th>S1</th><th>Mean</th>
-                  <th>S0</th><th>S1</th><th>Mean</th>
-                  <th>S0</th><th>S1</th><th>Mean</th>
-                  <th>S0</th><th>S1</th><th>Mean</th>
+                  <th style="width: 6.7%;">S0</th><th style="width: 6.7%;">S1</th><th style="width: 6.6%;">Mean</th>
+                  <th style="width: 6.7%;">S0</th><th style="width: 6.7%;">S1</th><th style="width: 6.6%;">Mean</th>
+                  <th style="width: 6.7%;">S0</th><th style="width: 6.7%;">S1</th><th style="width: 6.6%;">Mean</th>
+                  <th style="width: 6.7%;">S0</th><th style="width: 6.7%;">S1</th><th style="width: 6.6%;">Mean</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td rowspan="5"><strong>S3DIS</strong></td>
-                  <td>AttMPTI</td>
-                  <td>36.32</td><td>38.36</td><td>37.34</td>
-                  <td>46.71</td><td>42.70</td><td>44.71</td>
-                  <td>31.09</td><td>29.62</td><td>30.36</td>
-                  <td>39.53</td><td>32.62</td><td>36.08</td>
+                  <td rowspan="5" style="text-align: center;"><strong>S3DIS</strong></td>
+                  <td style="font-size: 0.6rem;">AttMPTI</td>
+                  <td style="text-align: center;">36.32</td><td style="text-align: center;">38.36</td><td style="text-align: center;">37.34</td>
+                  <td style="text-align: center;">46.71</td><td style="text-align: center;">42.70</td><td style="text-align: center;">44.71</td>
+                  <td style="text-align: center;">31.09</td><td style="text-align: center;">29.62</td><td style="text-align: center;">30.36</td>
+                  <td style="text-align: center;">39.53</td><td style="text-align: center;">32.62</td><td style="text-align: center;">36.08</td>
                 </tr>
                 <tr>
-                  <td>QGE</td>
-                  <td>41.69</td><td>39.09</td><td>40.39</td>
-                  <td>50.59</td><td>46.41</td><td>48.50</td>
-                  <td>33.45</td><td>30.95</td><td>32.20</td>
-                  <td>40.53</td><td>36.13</td><td>38.33</td>
+                  <td style="font-size: 0.6rem;">QGE</td>
+                  <td style="text-align: center;">41.69</td><td style="text-align: center;">39.09</td><td style="text-align: center;">40.39</td>
+                  <td style="text-align: center;">50.59</td><td style="text-align: center;">46.41</td><td style="text-align: center;">48.50</td>
+                  <td style="text-align: center;">33.45</td><td style="text-align: center;">30.95</td><td style="text-align: center;">32.20</td>
+                  <td style="text-align: center;">40.53</td><td style="text-align: center;">36.13</td><td style="text-align: center;">38.33</td>
                 </tr>
                 <tr>
-                  <td>QPGA</td>
-                  <td>35.50</td><td>35.83</td><td>35.67</td>
-                  <td>38.07</td><td>39.70</td><td>38.89</td>
-                  <td>25.52</td><td>26.26</td><td>25.89</td>
-                  <td>30.22</td><td>32.41</td><td>31.32</td>
+                  <td style="font-size: 0.6rem;">QPGA</td>
+                  <td style="text-align: center;">35.50</td><td style="text-align: center;">35.83</td><td style="text-align: center;">35.67</td>
+                  <td style="text-align: center;">38.07</td><td style="text-align: center;">39.70</td><td style="text-align: center;">38.89</td>
+                  <td style="text-align: center;">25.52</td><td style="text-align: center;">26.26</td><td style="text-align: center;">25.89</td>
+                  <td style="text-align: center;">30.22</td><td style="text-align: center;">32.41</td><td style="text-align: center;">31.32</td>
                 </tr>
                 <tr>
-                  <td>CoSeg</td>
-                  <td>46.31</td><td>48.10</td><td>47.21</td>
-                  <td>51.40</td><td>48.68</td><td>50.04</td>
-                  <td>37.44</td><td>36.45</td><td>36.95</td>
-                  <td>42.27</td><td>38.45</td><td>40.36</td>
+                  <td style="font-size: 0.6rem;">CoSeg</td>
+                  <td style="text-align: center;">46.31</td><td style="text-align: center;">48.10</td><td style="text-align: center;">47.21</td>
+                  <td style="text-align: center;">51.40</td><td style="text-align: center;">48.68</td><td style="text-align: center;">50.04</td>
+                  <td style="text-align: center;">37.44</td><td style="text-align: center;">36.45</td><td style="text-align: center;">36.95</td>
+                  <td style="text-align: center;">42.27</td><td style="text-align: center;">38.45</td><td style="text-align: center;">40.36</td>
                 </tr>
                 <tr class="has-background-grey-lighter">
-                  <td><strong>UPL (Ours)</strong></td>
-                  <td><strong>48.18</strong></td><td><strong>49.02</strong></td><td><strong>48.60</strong></td>
-                  <td><strong>55.92</strong></td><td>48.53</td><td><strong>52.22</strong></td>
-                  <td><strong>38.13</strong></td><td><strong>37.44</strong></td><td><strong>37.79</strong></td>
-                  <td>41.78</td><td><strong>41.96</strong></td><td><strong>41.87</strong></td>
+                  <td style="font-size: 0.6rem;"><strong>UPL (Ours)</strong></td>
+                  <td style="text-align: center;"><strong>48.18</strong></td><td style="text-align: center;"><strong>49.02</strong></td><td style="text-align: center;"><strong>48.60</strong></td>
+                  <td style="text-align: center;"><strong>55.92</strong></td><td style="text-align: center;">48.53</td><td style="text-align: center;"><strong>52.22</strong></td>
+                  <td style="text-align: center;"><strong>38.13</strong></td><td style="text-align: center;"><strong>37.44</strong></td><td style="text-align: center;"><strong>37.79</strong></td>
+                  <td style="text-align: center;">41.78</td><td style="text-align: center;"><strong>41.96</strong></td><td style="text-align: center;"><strong>41.87</strong></td>
                 </tr>
                 <tr>
-                  <td rowspan="5"><strong>ScanNet</strong></td>
-                  <td>AttMPTI</td>
-                  <td>34.03</td><td>30.97</td><td>32.50</td>
-                  <td>39.09</td><td>37.15</td><td>38.12</td>
-                  <td>25.99</td><td>23.88</td><td>24.94</td>
-                  <td>30.41</td><td>27.35</td><td>28.88</td>
+                  <td rowspan="5" style="text-align: center;"><strong>ScanNet</strong></td>
+                  <td style="font-size: 0.6rem;">AttMPTI</td>
+                  <td style="text-align: center;">34.03</td><td style="text-align: center;">30.97</td><td style="text-align: center;">32.50</td>
+                  <td style="text-align: center;">39.09</td><td style="text-align: center;">37.15</td><td style="text-align: center;">38.12</td>
+                  <td style="text-align: center;">25.99</td><td style="text-align: center;">23.88</td><td style="text-align: center;">24.94</td>
+                  <td style="text-align: center;">30.41</td><td style="text-align: center;">27.35</td><td style="text-align: center;">28.88</td>
                 </tr>
                 <tr>
-                  <td>QGE</td>
-                  <td>37.38</td><td>33.02</td><td>35.20</td>
-                  <td>45.08</td><td>41.89</td><td>43.49</td>
-                  <td>26.85</td><td>25.17</td><td>26.01</td>
-                  <td>28.35</td><td>31.49</td><td>29.92</td>
+                  <td style="font-size: 0.6rem;">QGE</td>
+                  <td style="text-align: center;">37.38</td><td style="text-align: center;">33.02</td><td style="text-align: center;">35.20</td>
+                  <td style="text-align: center;">45.08</td><td style="text-align: center;">41.89</td><td style="text-align: center;">43.49</td>
+                  <td style="text-align: center;">26.85</td><td style="text-align: center;">25.17</td><td style="text-align: center;">26.01</td>
+                  <td style="text-align: center;">28.35</td><td style="text-align: center;">31.49</td><td style="text-align: center;">29.92</td>
                 </tr>
                 <tr>
-                  <td>QPGA</td>
-                  <td>34.57</td><td>33.37</td><td>33.97</td>
-                  <td>41.22</td><td>38.65</td><td>39.94</td>
-                  <td>21.86</td><td>21.47</td><td>21.67</td>
-                  <td>30.67</td><td>27.69</td><td>29.18</td>
+                  <td style="font-size: 0.6rem;">QPGA</td>
+                  <td style="text-align: center;">34.57</td><td style="text-align: center;">33.37</td><td style="text-align: center;">33.97</td>
+                  <td style="text-align: center;">41.22</td><td style="text-align: center;">38.65</td><td style="text-align: center;">39.94</td>
+                  <td style="text-align: center;">21.86</td><td style="text-align: center;">21.47</td><td style="text-align: center;">21.67</td>
+                  <td style="text-align: center;">30.67</td><td style="text-align: center;">27.69</td><td style="text-align: center;">29.18</td>
                 </tr>
                 <tr>
-                  <td>CoSeg</td>
-                  <td>41.73</td><td>41.82</td><td>41.78</td>
-                  <td>48.31</td><td>44.11</td><td>46.21</td>
-                  <td>28.72</td><td>28.83</td><td>28.78</td>
-                  <td>35.97</td><td>33.39</td><td>34.68</td>
+                  <td style="font-size: 0.6rem;">CoSeg</td>
+                  <td style="text-align: center;">41.73</td><td style="text-align: center;">41.82</td><td style="text-align: center;">41.78</td>
+                  <td style="text-align: center;">48.31</td><td style="text-align: center;">44.11</td><td style="text-align: center;">46.21</td>
+                  <td style="text-align: center;">28.72</td><td style="text-align: center;">28.83</td><td style="text-align: center;">28.78</td>
+                  <td style="text-align: center;">35.97</td><td style="text-align: center;">33.39</td><td style="text-align: center;">34.68</td>
                 </tr>
                 <tr class="has-background-grey-lighter">
-                  <td><strong>UPL (Ours)</strong></td>
-                  <td><strong>43.13</strong></td><td><strong>42.87</strong></td><td><strong>43.00</strong></td>
-                  <td><strong>48.48</strong></td><td><strong>45.18</strong></td><td><strong>46.83</strong></td>
-                  <td><strong>32.09</strong></td><td><strong>32.68</strong></td><td><strong>32.39</strong></td>
-                  <td><strong>39.65</strong></td><td><strong>37.15</strong></td><td><strong>38.40</strong></td>
+                  <td style="font-size: 0.6rem;"><strong>UPL (Ours)</strong></td>
+                  <td style="text-align: center;"><strong>43.13</strong></td><td style="text-align: center;"><strong>42.87</strong></td><td style="text-align: center;"><strong>43.00</strong></td>
+                  <td style="text-align: center;"><strong>48.48</strong></td><td style="text-align: center;"><strong>45.18</strong></td><td style="text-align: center;"><strong>46.83</strong></td>
+                  <td style="text-align: center;"><strong>32.09</strong></td><td style="text-align: center;"><strong>32.68</strong></td><td style="text-align: center;"><strong>32.39</strong></td>
+                  <td style="text-align: center;"><strong>39.65</strong></td><td style="text-align: center;"><strong>37.15</strong></td><td style="text-align: center;"><strong>38.40</strong></td>
                 </tr>
               </tbody>
             </table>
